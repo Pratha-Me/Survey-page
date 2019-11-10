@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+    </header>
+    
+    <main>
+    <hr>
+      <p id="description">Have you wondered why an improved freeCodeCamp is always more tailored to you</p>
+      <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com" target="_top">
+      
+        <div class="leftTab">
+      
+          <label id="name-label" for="name">* Name: </label>
+          <br> </br>
+        <label id="email-label" for="email">* Email: </label>
+        <br> </br>
+      <label id="number-label" for="age">* Age: </label>
+      
+      <br> </br>
+    <label for="currentPos">What's current your position?</label>
+    <br> </br>
+  <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+  
+  <br> </br> <br>
+<label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+
+<label id ="labelComment" for="comments">Any Comments or Suggestions?</label>
+    
+  </div>
+    
+<div class="rightTab">
+  <input autofocus type="text" name="name" id="name" class="input-field" placeholder="My name is beautiful" required>
+  <input type="email" name="email" id="email" class="input-field" required placeholder="Please send me a charming message">
+  <input type="number" name="email" id="number" min="1" max="125" class="input-field" placeholder="Forever21">
+      
+  <select id="dropdown" name="currentPos" class="dropdown">
+    <option disabled value>Select an option</option>
+    <option  value="student">Student</option>
+    <option value="job">Full Time Job</option>
+    <option value="learner">Full Time Learner</option>
+    <option value="preferNo">Prefer not to say</option>
+    <option value="other">Other</option>
+  </select>
+  
+  <ul style="list-style: none;">
+    <li class="radio"><label>Definitely<input name="radio-buttons" value="radio_group"  type="radio" class="userRatings" ></label>
+    </li>
+    <li class="radio">
+      <label>Maybe<input name="radio-buttons" value="radio_group"  type="radio" class="userRatings" ></label>
+    </li>
+    <li class="radio">
+      <label>Not sure<input name="radio-buttons" value="radio_group"  type="radio" class="userRatings" ></label>
+    </li>
+  </ul>
+  
+  <ul id="preferences" style="list-style: none;">
+    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+    <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter help rooms</label></li>
+    <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+    <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label></li>
+    <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+    <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+    <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label></li>
+  </ul>
+
+  <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Whatever you have to say, I only have to say that you are my fantasy...."></textarea>
+</div>
+
+<button id="submit" type="submit">Submit</button>
+
+</form>
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
